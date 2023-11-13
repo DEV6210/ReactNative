@@ -1,32 +1,50 @@
 import React from 'react';
-import { SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, View, } from 'react-native';
+import { Button, SafeAreaView, ScrollView, StatusBar, StyleSheet, Text, TouchableHighlight, View, } from 'react-native';
 
-function HomeScreen() {
+function HomeScreen({ navigation }) {
+  const goToNextScreen = () => {
+    navigation.navigate('Profile');
+  };
+  
+
+  const getPosts = async () => {
+
+  }
+
+
+
   return (
-    <ScrollView
-      contentInsetAdjustmentBehavior="automatic"
-      showsHorizontalScrollIndicator={false}
-      showsVerticalScrollIndicator={false}
-      horizontal={true}
-    >
-      <View style={styles.container}>
-        <View style={styles.card}>
-          <Text>Hello</Text>
-        </View>
-        <View style={styles.card}>
-          <Text>Hello</Text>
-        </View>
-        <View style={styles.card}>
-          <Text>Hello</Text>
-        </View>
-        <View style={styles.card}>
-          <Text>Hello</Text>
-        </View>
-        <View style={styles.card}>
-          <Text>Hello</Text>
-        </View>
-      </View>
-    </ScrollView>
+    <SafeAreaView>
+      <ScrollView>
+        <ScrollView
+          contentInsetAdjustmentBehavior="automatic"
+          showsHorizontalScrollIndicator={false}
+          showsVerticalScrollIndicator={false}
+          horizontal={true}
+        >
+          <View style={styles.container}>
+            <View style={styles.card}>
+              <Text>Hello</Text>
+            </View>
+            <View style={styles.card}>
+              <Text>Hello</Text>
+            </View>
+            <View style={styles.card}>
+              <Text>Hello</Text>
+            </View>
+            <View style={styles.card}>
+              <Text>Hello</Text>
+            </View>
+            <View style={styles.card}>
+              <Text>Hello</Text>
+            </View>
+          </View>
+        </ScrollView>
+        <TouchableHighlight underlayColor="transparent">
+          <Button onPress={goToNextScreen} title='next screen' />
+        </TouchableHighlight>
+      </ScrollView>
+    </SafeAreaView>
   )
 }
 
