@@ -1,13 +1,22 @@
 import React from 'react';
-import { View, Text, Button } from 'react-native';
+import { View, Button } from 'react-native';
+import { StackNavigationProp } from '@react-navigation/stack';
 
-function SettingScreen({ navigation }) {
-    console.log(navigation)
+type RootStackParamList = {
+    Home: undefined;
+    // Add other screen names if needed
+};
+
+type SettingScreenProps = {
+    navigation: StackNavigationProp<RootStackParamList, 'Home'>;
+};
+
+function SettingScreen({ navigation }: SettingScreenProps) {
     return (
         <View>
             <Button
-                title="Go to Second Screen"
-                onPress={() => navigation.navigate('Profile')}
+                title="Setting"
+                onPress={() => navigation.navigate('Home')}
             />
         </View>
     );
