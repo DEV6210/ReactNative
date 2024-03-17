@@ -10,6 +10,9 @@
 # FCM Push Notification
 Referance: https://www.magicbell.com/blog/how-to-implement-react-native-push-notifications-with-firebase
 
+# FCM React native setup
+https://rnfirebase.io/messaging/usage
+
 # splash screen
 
 
