@@ -15,7 +15,16 @@ https://rnfirebase.io/messaging/usage
 
 # splash screen
 
-
+# ngrok.yml
+```
+version: "2"
+authtoken: 2c1bqI12zq2l7MtpiqF03tLQJEp_6N66o7szog2hdo4q1P8qs
+tunnels:
+  server:
+    proto: http
+    addr: 8080
+    domain: firstly-driving-kodiak.ngrok-free.app
+```
 
 
 ![Screenshot 2023-11-13 200931](https://github.com/DEV6210/ReactNative/assets/91625966/3f7a5ec5-d8f2-4073-b243-1f71d226e3ec)
