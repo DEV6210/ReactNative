@@ -13,8 +13,8 @@ Referance: https://www.magicbell.com/blog/how-to-implement-react-native-push-not
 # FCM React native setup
 https://rnfirebase.io/messaging/usage
 
-```
 # ngrok.yml
+```
 version: "2"
 authtoken: 2c1bqI12zq2l7MtpiqF03tLQJEp_6N66o7szog2hdo4q1P8qs
 tunnels:
