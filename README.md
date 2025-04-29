@@ -13,6 +13,12 @@ Referance: https://www.magicbell.com/blog/how-to-implement-react-native-push-not
 # FCM React native setup
 https://rnfirebase.io/messaging/usage
 
+# generates release signed APK
+./gradlew assembleRelease
+# generates release signed AAB
+./gradlew bundleRelease
+
+
 # ngrok.yml
 ```
 version: "2"
