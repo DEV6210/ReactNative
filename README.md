@@ -18,6 +18,13 @@ https://rnfirebase.io/messaging/usage
 # generates release signed AAB
 ./gradlew bundleRelease
 
+# Clean Gradle (Android):
+```
+cd android
+./gradlew clean
+cd ..
+npx react-native run-android
+```
 
 # ngrok.yml
 ```
