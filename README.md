@@ -2,10 +2,14 @@
 
 # SHA1 key
  PS D:\Tynder\app\android\app>
+ ```
  keytool -list -v -keystore ./debug.keystore -alias androiddebugkey (not input pass just press enter)
+```
  
 # RNSS SCREEN Navigation problem solve
+```
  npm install react-native-screens react-native-safe-area-context
+```
 
 # FCM Push Notification
 Referance: https://www.magicbell.com/blog/how-to-implement-react-native-push-notifications-with-firebase
@@ -14,9 +18,14 @@ Referance: https://www.magicbell.com/blog/how-to-implement-react-native-push-not
 https://rnfirebase.io/messaging/usage
 
 # generates release signed APK
+```
 ./gradlew assembleRelease
+```
+
 # generates release signed AAB
+```
 ./gradlew bundleRelease
+```
 
 # Clean Gradle (Android):
 ```
