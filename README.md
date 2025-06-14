@@ -19,12 +19,16 @@ https://rnfirebase.io/messaging/usage
 
 # generates release signed APK
 ```
+cd android
 ./gradlew assembleRelease
+cd ..
 ```
 
 # generates release signed AAB
 ```
+cd android
 ./gradlew bundleRelease
+cd ..
 ```
 
 # Clean Gradle (Android):
