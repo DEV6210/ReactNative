@@ -54,13 +54,14 @@ tunnels:
 ![Screenshot 2023-11-13 200931](https://github.com/DEV6210/ReactNative/assets/91625966/3f7a5ec5-d8f2-4073-b243-1f71d226e3ec)
 
 
+# App Publish oppo store
+Download empty signature package. Write the signature that matches the app into the empty package ( Please communicate with the technical personnel of your company to write signature ), Upload the signed empty package (.apk). The size of the empty package shall not exceed 3M. For details, please see Copyright review process
 
-# Download empty signature package. Write the signature that matches the app into the empty package ( Please communicate with the technical personnel of your company to write signature ), Upload the signed empty package (.apk). The size of the empty package shall not exceed 3M. For details, please see Copyright review process
 Uploading an empty signature package verifies your identity as the App developer and prevents unauthorized claims via impersonation.
-
+```
 OppoSignVerify.apk
 growrupi-key.keystore
-
+```
 ```
 jarsigner -verbose -keystore growrupi-key.keystore -storetype PKCS12 -signedjar OppoSignVerify_signed.apk OppoSignVerify.apk growrupi-key-alias
 ```
